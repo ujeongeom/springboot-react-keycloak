@@ -1,15 +1,16 @@
+server:
+  port: 9080
 spring:
   application:
     name: movies-api
   data:
     mongodb:
-      uri: mongodb://localhost:27017/moviesdb
+      uri: mongodb://211.252.87.34:40008/moviesdb #mongodb://localhost:27017/moviesdb
   security:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri: http://localhost:8080/realms/company-services
-
+          issuer-uri: http://localhost:8080/realms/company-services #http://211.252.87.34:40007/realms/company-services # http://localhost:8080/realms/company-services # http://211.252.87.34:40007/realms/company-services
 jwt:
   auth:
     converter:
@@ -19,6 +20,8 @@ jwt:
 app:
   cors:
     allowed-origins: http://localhost:3000
+  keycloak:
+    server : http://localhost:8080 # http://211.252.87.34:40007
 
 management:
   endpoints:
@@ -37,3 +40,7 @@ springdoc:
 logging:
   level:
     org.springframework.security: DEBUG
+    org:
+      keycloak:
+        admin:
+          client: DEBUG
