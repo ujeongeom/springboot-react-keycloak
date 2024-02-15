@@ -8,7 +8,7 @@ services:
       - KEYCLOAK_ADMIN=admin
       - KEYCLOAK_ADMIN_PASSWORD=admin
       - KC_DB=postgres
-      - KC_DB_URL_HOST=211.252.87.34
+      - KC_DB_URL_HOST=211.143.13.1
       - KC_DB_URL_PORT=30012
       - KC_DB_URL_DATABASE=keycloak2
       - KC_DB_USERNAME=keycloak2
