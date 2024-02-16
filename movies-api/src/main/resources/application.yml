@@ -10,7 +10,7 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri: http://localhost:8080/realms/company-services #http://211.252.87.34:40007/realms/company-services # http://localhost:8080/realms/company-services # http://211.252.87.34:40007/realms/company-services
+          issuer-uri: http://localhost:8080/realms/company-services # http://localhost:8080/realms/company-services # http://211.252.87.34:40007/realms/company-services
 jwt:
   auth:
     converter:
