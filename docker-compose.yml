@@ -16,7 +16,7 @@ services:
   #    - JDBC_PARAMS: ssl=false"
       - KC_HEALTH_ENABLED=true
     ports:
-      - "8080:8080"
+      - "30000:8080"
     command: start-dev
     healthcheck:
       test: "curl -f http://localhost:8080/health/ready || exit 1"
